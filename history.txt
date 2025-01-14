@@ -1,0 +1,20 @@
+  171  git checkout -b 'feature'
+  172  touch readme.md
+  173  git status
+  174  git add readme.md
+  175  git status
+  176  git commit -m 'add readme.md'
+  177  git log
+  178  git status
+  179  git add .gitignore
+  180  git status
+  181  git commit -m 'update .gitignore'
+  182  git log
+  183  git push -u origin feature
+  184  git commit --amend -m 'update .gitignore amend'
+  185  git status
+  186  git checkout main
+  187  git merge feature
+  188  git log
+  189  git push
+  190  history | tail -20 > history.txt
